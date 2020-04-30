@@ -13,7 +13,7 @@ Je cherchais donc un sujet sur lequel essayer mes toutes fraîches compétences.
 
 Mon objectif est donc de proposer plusieurs TP afin de progresser en python et de partager des réflexions sur l'identifiant ARK et en montrer la logique.
 
-J'ai également les [notebooks Jupyter](https://fr.wikipedia.org/wiki/Jupyter) pour commenter mon code et vous permettre de le manipuler dynamiquement. Pour cela, outre les fichiers python et les fichiers .jpynb, que vous pouvez télécharger et lancer avec vos applications python favorites, j'utilise Binder qui vous permet de disposer d'un environnement en ligne pour exécuter et modifier le code sans rient installer. En cliquant sur le bouton "launch", Binder vous ouvrira le repository "ark-tools" dans un environnement Jupyter Notebooks et vous pourrez manipuler les TP comme si vous aviez installé un environnement complet.
+J'ai également les [notebooks Jupyter](https://fr.wikipedia.org/wiki/Jupyter) pour commenter mon code et vous permettre de le manipuler dynamiquement. Pour cela, outre les fichiers python et les fichiers .jpynb, que vous pouvez télécharger et lancer avec vos applications python favorites, j'utilise Binder qui vous permet de disposer d'un environnement en ligne pour exécuter et modifier le code sans rient installer. En cliquant sur le bouton "launch" (et en patientant plusieurs dizaines de secondes, soyez patients), Binder vous ouvrira le repository "ark-tools" dans un environnement Jupyter Notebooks et vous pourrez manipuler les TP comme si vous aviez installé un environnement complet.
 
 C'est parti ? [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BertrandCaron/ark-tools/master)
 
