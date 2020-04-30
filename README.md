@@ -6,9 +6,9 @@ Depuis le début du confinement, j'ai décidé de remettre le nez dans Python, l
 Influencé par un collègue qui m'avait confié ne plus vouloir apprendre des langages liés à un formalisme spécifique, j'avais pour objectif d'apprendre à traiter des données qui n'étaient pas dans des formats dont j'avais l'habitude - XML et RDF, pour ne pas les nommer.
 
 Je cherchais donc un sujet sur lequel essayer mes toutes fraîches compétences. Et l'identifiant ARK s'est vite présenté comme une évidence ! Je vous propose donc de publier plusieurs notebooks Jupyter incrémentaux
-* comme TP python pour les bibliothécaires, BnF ou non, qui apprennent python et veulent s'essayer à un petit TP sur un sujet maison (niveau "grand débutant", avoir suivi jusqu'au bout les deux premières ressources ci-dessous devrait suffire à s'en sortir avec brio),
-* comme des réflexions sur l'identifiant ARK et sa logique pour les personnes qui s'intéressent au sujet - celles-ci se dispenseront de regarder le code, mais pourraient être intéressées par le texte qui l'entoure -,
-* pour moi-même aussi ;-) afin de partager ma progression et recueillir les conseils de programmeurs chevronnés,
+* pour les bibliothécaires, BnF ou non, qui apprennent python et veulent s'essayer à un petit TP sur un sujet maison (niveau "grand débutant", avoir suivi jusqu'au bout les deux premières ressources ci-dessous devrait suffire à s'en sortir avec brio),
+* comme base de réflexion sur l'identifiant ARK et sa logique, tant il est vrai qu'on comprend mieux quand on manipule soi-même,
+* pour moi ;-) afin de partager ma progression et recueillir les conseils de programmeurs chevronnés,
 * comme une "preuve de concept" sur l'intérêt d'utiliser les notebooks Jupyter pour partager nos expériences de bibliothécaires apprentis ~~sorciers~~ codeurs.
 
 Pour vous permettre de manipuler dynamiquement les fichiers python et les [notebooks Jupyter](https://fr.wikipedia.org/wiki/Jupyter) (fichiers .jpynb), j'utilise [Binder](https://mybinder.org/). En cliquant sur le bouton "launch" (ça prend plusieurs dizaines de secondes, soyez patients), Binder vous ouvrira le repository "ark-tools" dans un environnement Jupyter Notebooks et vous pourrez manipuler les TP comme si vous aviez installé un environnement python complet.
