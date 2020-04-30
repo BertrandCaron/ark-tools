@@ -17,18 +17,18 @@ J'ai également les [notebooks Jupyter](https://fr.wikipedia.org/wiki/Jupyter) p
 
 C'est parti ? [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BertrandCaron/ark-tools/master)
 
-## Ressources consultées
+## Ressources consultées sur python
 
 * Library Carpentry, _Python for libraries_. Disponible en ligne sur https://librarycarpentry.org/lc-python-intro/.
 * Benjamin Marlé, Alexis Perrier, _Initiez-vous à Python pour l'analyse de données_, OpenClassrooms, mise à jour du 27/04/2020. Disponible en ligne sur https://openclassrooms.com/fr/courses/6204541-initiez-vous-a-python-pour-lanalyse-de-donnees. 
 * Jason R. Briggs, _Python for Kids: A Playful Introduction to Programming_, No Starch Press : San Francisco, 2013.
 * Vincent Le Goff, _Apprenez à programmer en Python_, OpenClassrooms, mise à jour 7/02/2020. Disponible en ligne sur https://openclassrooms.com/fr/courses/235344-apprenez-a-programmer-en-python/232431-utilisez-des-fichiers. 
 
-## Ressources encore à découvrir...
+## Ressources encore à découvrir sur python...
 
 * Ali Neishabouri, _Découvrez les librairies Python pour la Data Science_, OpenClassrooms, mise à jour du 31/03/2020. Disponible en ligne sur https://openclassrooms.com/fr/courses/4452741-decouvrez-les-librairies-python-pour-la-data-science.
 
-## Petit rappel sur ARK
+## Ressources sur ARK
 
 Vous trouverez de l'information sur le sujet de l'identifiant ARK dans les documents suivants :
 * John Kunze (éd.), Bertrand Caron (trad. en français), _Foire aux questions sur l'identifiant ARK_, Projet ARKs-In-The-Open, version du 13 mars 2020. Disponible en ligne sur https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880619.
