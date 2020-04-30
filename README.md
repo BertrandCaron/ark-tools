@@ -7,7 +7,7 @@ Influencé par un collègue qui m'avait confié ne plus vouloir apprendre des la
 
 Je cherchais donc un sujet sur lequel essayer mes toutes fraîches compétences. Et l'identifiant ARK s'est vite présenté comme une évidence ! Je vous propose donc ce notebook Jupyter
 * pour les bibliothécaires, BnF ou non, qui apprennent python et veulent s'essayer à un petit TP sur un sujet maison (niveau "grand débutant", avoir suivi jusqu'au bout les deux premières ressources ci-dessous devrait suffire à s'en sortir avec brio),
-* pour les personnes qui s'intéressent à ARK - celles-ci pourront se dispenser de regarder le code, mais pourraient être intéressées par le texte qui l'entoure -,
+* pour les personnes qui s'intéressent à ARK - celles-ci se dispenseront de regarder le code, mais pourraient être intéressées par le texte qui l'entoure -,
 * pour moi-même aussi ;-) afin de partager ma progression et recueillir les conseils de programmeurs chevronnés,
 * comme une "preuve de concept" sur l'intérêt d'utiliser les Jupyter notebooks pour partager nos expériences de bibliothécaires apprentis ~~sorciers~~ codeurs.
 
