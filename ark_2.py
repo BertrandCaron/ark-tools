@@ -6,6 +6,27 @@ import sys
 
 ALPHABET = '0123456789bcdfghjkmnpqrstvwxz'
 
+class InvalidCharError(Exception):
+    def __init__(self, char):
+        self.char = char
+
+    def __str__(self):
+        return repr(("La chaîne n'est pas valide, le caractère {} ne figure pas dans l'alphabet BnF.").format(self.char))
+    
+class InputLengthTooLongError(Exception):
+    def __init__(self, str_len):
+        self.len = str(str_len)
+    
+    def __str__(self):
+        return repr(("La chaîne est trop longue pour être validée : {}").format(self.len))
+    
+class InputLengthTooShortError(Exception):
+    def __init__(self, str_len):
+        self.len = str(str_len)
+    
+    def __str__(self):
+        return repr(("La chaîne est trop courte pour être validée : {}").format(self.len))
+
 
 class ChaineARKBnF():
     """Classe principale de gestion des chaînes ARK BnF"""
@@ -20,39 +41,37 @@ class ChaineARKBnF():
     def valider(self):
         """Méthode de validation d'une chaîne
 
-        Elle renvoie un tuple avec en première valeur un booléen et en
-        seconde un message qui spécifie le cas échéant les caractères
-        invalides."""
-        invalides = []
-        for carac in self.valeur:
-            if carac not in ALPHABET:
-                invalides.append(carac)
-        if not invalides:
-            valide = True
-            msg = "La chaîne est valide au regard de l'alphabet BnF."
-        else:
-            valide = False
-            msg = ("La chaîne n'est pas valide, le(s) caractère(s) {} "
-                   "ne figurent pas dans l'alphabet BnF.").format(set(invalides))
-        return (valide, msg)
+        Valide une chaine de caractère en se basant sur son caractère de contrôle"""
+        unqualified_id = self.valeur[:-1]
+        checksum_char = self.valeur[-1]
+
+        try:
+            return ChaineARKBnF(unqualified_id).calculer_controle() == checksum_char
+        except Exception as e:
+            return e
 
     def calculer_controle(self):
         """Méthode de calcul du caractère de contrôle
 
         Elle renvoie le caractère de contrôle si la chaîne est valide et
         gère les erreurs."""
-        try:
-            addition = 0
-            for indice, carac in enumerate(self.valeur):
+        input_len = len(self.valeur)
+        
+        if input_len < 1:
+            raise InputLengthTooShortError(input_len)
+        if input_len > len(ALPHABET):
+            raise InputLengthTooLongError(input_len)
+        
+        addition = 0
+        
+        for indice, carac in enumerate(self.valeur):
+            try:
                 addition += ALPHABET.index(carac) * (indice+1)
-            controle = ALPHABET[addition % 29]
-            return controle
-        except ValueError:
-            valide = self.valider()
-            if not valide[0]:
-                print(valide[1], file=sys.stderr)
-            return ''
-
+            except ValueError:
+                raise InvalidCharError(carac)
+                
+        controle = ALPHABET[addition % 29]
+        return controle
 
 def main(args):
     """Fonction principale
@@ -61,10 +80,13 @@ def main(args):
     argument."""
     valeur = args[1] if len(args) > 1 else "t3st"
     chaine = ChaineARKBnF(valeur)
-    controle = chaine.calculer_controle()
-    msg = "Pour {}, le caractère de contrôle est {}"
-    print(msg.format(valeur, controle))
-
+    
+    try:
+        controle = chaine.calculer_controle()
+        msg = "Pour {}, le caractère de contrôle est {}" 
+        print(msg.format(valeur, controle))
+    except Exception as e:
+        print(e)
 
 if __name__ == '__main__':
     main(sys.argv)
